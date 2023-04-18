@@ -4,8 +4,14 @@ int main(int argc, char const *argv[])
 {
     int num, c, d, u;
 
-    printf("Ingrese un numero entero de tres digitos: ");
-    scanf("%d", &num);
+  do {
+        printf("Ingrese un numero entero de tres digitos: ");
+        scanf("%d", &num);
+
+        if (num < 100 || num > 999) {
+            printf("Error: el numero debe tener exactamente 3 digitos.\n");
+        }
+    } while (num < 100 || num > 999);
 
     c = num / 100; 
     d = (num % 100) / 10; 
