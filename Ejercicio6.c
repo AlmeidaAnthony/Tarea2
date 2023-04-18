@@ -7,9 +7,9 @@ int main(int argc, char const *argv[])
     printf("Ingrese un numero entero de tres digitos: ");
     scanf("%d", &num);
 
-    c = num / 100; // obtenemos el dígito de las centenas
-    d = (num % 100) / 10; // obtenemos el dígito de las decenas
-    u = num % 10; // obtenemos el dígito de las unidades
+    c = num / 100; 
+    d = (num % 100) / 10; 
+    u = num % 10; 
 
     printf("Los enteros entre 1 y %d son:\n", c);
     for (int i = 1; i <= c; i++) {
